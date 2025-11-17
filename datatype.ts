@@ -13,7 +13,7 @@ var b = "hello"; // string
 var c = true; // boolean
 var d = null; // null
 var e = undefined;      
-var f = Symbol("sym"); // symbol
+var z = Symbol("sym"); // symbol
 var g = 9007199254740991n; // bigint
 var h = [1, 2, 3]; // array
 var i = [1, "two", true]; // tuple
@@ -31,7 +31,7 @@ var l = { name: "Alice", age: 30 }; // object
 let arr: [number, string] = [12, "hello",];
 
 
-enum numberM{
+enum numberM {
     NUM = 1,
     NUM2 = 2,
 }
