@@ -1,4 +1,4 @@
-// classes and objects 
+// classes and objects
 // class definition
 // constructors
 // access modifiers (public, private, protected)
@@ -31,9 +31,38 @@ var humanmaker = /** @class */ (function () {
     function humanmaker(name, ishandsome) {
         this.name = name;
         this.ishandsome = ishandsome;
-        this.age = 100;
+        this.age = 0;
     }
     return humanmaker;
 }());
 var h1 = new humanmaker("john", true);
 var h2 = new humanmaker("doe", false);
+var music = /** @class */ (function () {
+    function music(title, artist, duration, thumbnail, free) {
+        if (thumbnail === void 0) { thumbnail = "thumbnail.jpg"; }
+        this.title = title;
+        this.artist = artist;
+        this.duration = duration;
+        this.thumbnail = thumbnail;
+        this.free = free;
+        if (!thumbnail) {
+            this.thumbnail = "thumbnail.jpg";
+        }
+    }
+    return music;
+}());
+var music1 = new music("let it happen", "tame impala", 320, undefined, true);
+var music2 = new music("boderline", "tame impala", 290, "mymusic.jpg", true);
+var animals = /** @class */ (function () {
+    function animals(name, height) {
+        this.name = name;
+        this.height = height;
+        {
+            this.name = name;
+            this.height = height;
+        }
+    }
+    return animals;
+}());
+var a2 = new animals("lion", 120);
+var a3 = new animals("tiger", 110);
