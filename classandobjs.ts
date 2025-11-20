@@ -49,3 +49,15 @@ class music {
 
 let music1 = new music("let it happen", "tame impala", 320, undefined, true);
 let music2 = new music("boderline", "tame impala", 290, "mymusic.jpg", true);
+
+
+class animals {
+  constructor(public name: string, public height: number){
+    {
+      this.name = name;
+      this.height = height;
+    }
+  }
+}
+let a2 = new animals("lion", 120);
+let a3 = new animals("tiger", 110);
