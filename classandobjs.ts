@@ -79,3 +79,29 @@ class cars{
 
 let c1 = new cars("bmw", 200);
 c1.getname();
+
+
+//static members, properties and methods
+
+class calculator{
+  static value: number = 3.14; //we do not need to create an object/instance to access static members
+
+  static getrandomvalue(){
+    return Math.random(); // generates a random number between 0 and 1
+  }
+} 
+
+// Abstract classes and methods 
+
+class cookingessential{
+  constructor(public name: string, public price: number){
+}
+}
+class veegetable extends cookingessential{
+
+}
+
+class cake extends cookingessential{
+  
+}
+
