@@ -61,3 +61,21 @@ class animals {
 }
 let a2 = new animals("lion", 120);
 let a3 = new animals("tiger", 110);
+
+
+//getters and setters
+
+class cars{
+  constructor(public name: string, public speed: number){
+
+  }
+  getname(){
+    return this.name;
+  }
+  setname(value: string){
+    this.name = value;
+  }
+}
+
+let c1 = new cars("bmw", 200);
+c1.getname();
